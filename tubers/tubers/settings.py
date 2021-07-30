@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.github',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +95,8 @@ DATABASES = {
         'NAME': 'lcotubers',
         'USER' : 'postgres',
         'PASSWORD' : '12345',
-        'HOST' : 'localhost'
+        'HOST' : 'localhost',
+        'port' : '5431'
     }
 }
 
